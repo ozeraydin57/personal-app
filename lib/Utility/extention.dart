@@ -1,7 +1,7 @@
 import 'package:url_launcher/url_launcher.dart';
 
 extension GotoExtension on String {
-  Future<String> get gotEmail async {
+  Future<String> get goToEmail async {
     var url = "mailto:" + this;
     if (await canLaunch(url)) {
       await launch(url);

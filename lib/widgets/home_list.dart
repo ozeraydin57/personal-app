@@ -52,7 +52,7 @@ ListTile tileWithSite(String title, String subtitle, IconData icon, bool withWww
 ListTile tileWithEmail(String title, String subtitle, IconData icon, bool withWww) {
   return ListTile(
     onTap: () async {
-      subtitle.gotEmail;
+      subtitle.goToEmail;
     },
     title: Text(title, style: TextStyle()),
     subtitle: Text(subtitle),
